@@ -46,8 +46,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home shoes={shoes} setShoes={setShoes} />} />
-        <Route
-          path="/detail/:id"
+        <Route path="/detail/:id"
           element={
             <Context1.Provider value={{ 재고, shoes }}>
               <Detail shoes={shoes} />
